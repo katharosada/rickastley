@@ -4,16 +4,16 @@ app = Flask(__name__)
 from twilio import twiml
 
 # Where we're storing all our audio files.
-url_base = "https://s3-us-west-2.amazonaws.com/true-commitment/"
+url_base = 'https://s3-ap-southeast-2.amazonaws.com/sk274nc02mfhb/'
 
 _original = {
-    'description': "The Original",
-    'by': "Rick Astley",
-    'url': url_base + "01-NeverGonnaGiveYouUp.mp3"
+    'description': "Hello",
+    'by': "Adele",
+    'url': url_base + "hellomusic.mp3"
 }
 
 # Played on timeout
-goodbye = "Thank you for calling the National Rick Astley Hotline. Goodbye."
+goodbye = "Thank you for calling the Hello trolling hotline. Goodbye."
 
 tunes = [
     None,   # Zero is always the menu
