@@ -9,7 +9,7 @@ url_base = 'https://s3-ap-southeast-2.amazonaws.com/sk274nc02mfhb/'
 _original = {
     'description': "Hello",
     'by': "Adele",
-    'url': url_base + "hellomusic.mp3"
+    'url': url_base + "hellomusic_cut.mp3"
 }
 
 # Played on timeout
