@@ -131,6 +131,7 @@ def original():
 
     # Without a selection, play the original
     if selection is None:
+        return str(play_tune(_original))
 
     # With a selection try to turn into an index we can use.
     # There may be a '#' or '*', so we'll default to '0'
