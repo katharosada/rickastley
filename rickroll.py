@@ -127,7 +127,6 @@ def play_menu():
 def original():
 
     return str(play_tune(_original))
-    '''
     selection = request.values.get('Digits')
 
     # Without a selection, play the original
@@ -153,7 +152,6 @@ def original():
     except Exception: pass
 
     return str(play_tune(tune))
-    '''
 
 if __name__ == "__main__":
     app.run()
