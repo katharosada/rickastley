@@ -126,11 +126,12 @@ def play_menu():
 @app.route("/", methods = ['GET','POST'])
 def original():
 
+    return str(play_tune(_original))
+    '''
     selection = request.values.get('Digits')
 
     # Without a selection, play the original
     if selection is None:
-        return str(play_tune(_original))
 
     # With a selection try to turn into an index we can use.
     # There may be a '#' or '*', so we'll default to '0'
@@ -152,6 +153,7 @@ def original():
     except Exception: pass
 
     return str(play_tune(tune))
+    '''
 
 if __name__ == "__main__":
     app.run()
